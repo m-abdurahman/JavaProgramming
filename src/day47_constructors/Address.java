@@ -7,6 +7,26 @@ public class Address {
     private int zipcode;
     private String country = "USA";
 
+    //constructor - automatically called
+    public Address(){
+        System.out.println("Address constructor");
+        street = "123 unknown st";
+        city = "Java";
+        state = "WS";
+        zipcode = 12345;
+
+    }
+    //second constructor, overloaded constructor using param,
+    // providing shortcuts to initialize variables in the same statement
+    //ex. Address ad = new Address ("123 Java st, "Boston", "MA" 01234)
+    public Address(String street, String city, String state, int zipcode){
+        this.street =street;
+        setStreet(street);
+
+    }
+
+    //public Address (street, city, state, zipCode)
+
 
     public void setStreet(String street) {
         this.street = street;
@@ -29,6 +49,10 @@ public class Address {
         this.country = country;
     }
 
+    public String getStreet(){
+        return street;
+    }
+
     public String getCity() {
         return city;
     }
@@ -43,6 +67,6 @@ public class Address {
 
     @Override
     public String toString() {
-        return street + ", " + city + ", " + state + " " + zipcode + country;
+        return street + ", " + city + ", " + state + " " + zipcode + " " + country;
     }
 }
