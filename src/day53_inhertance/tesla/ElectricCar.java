@@ -7,6 +7,8 @@ public class ElectricCar {
     private int year;
     private int range;
     private static  int count; //all objected will share this variable
+    public static final int MAX_RANGE = 400;
+
 
     public ElectricCar(String make, String model, double price, int year, int range) {
         setMake(make); //this & this.make = make is the same, useful when setting has condition
@@ -17,6 +19,12 @@ public class ElectricCar {
         this.year = year;
         this.range = range;
         count++; //increase count by 1 everytime new car is created
+    }
+
+    public final void charge(){
+        System.out.println("Charging the electric car using an outlet");
+        range = MAX_RANGE;
+        this.range = range;
     }
 
     public static int getCount(){
