@@ -31,6 +31,40 @@ public class MapExamples2 {
         map3.put(12, new Person("Nick", 10));
         System.out.println(map3);
 
+        /*
+        BD examples
+
+        FIRST_NAME  James
+        LAST_NAME   BOND
+        AGE         50
+         */
+
+         /*
+        BD
+        key         value
+
+        FIRST_NAME  AMY
+        LAST_NAME   ROSE
+        AGE         30
+
+            key     value
+       Map<String, String> map = new HashMap<>();
+       map.put("FIRST_NAME", "James");
+       map.put("LAST_NAME", "Bond");
+
+       map.get("FIRST_NAME") -> prints James
+       if map.get("AGE") <0) -> fails test case
+       if(map.get("FIRST_NAME") == null) -> fail test case
+
+       List<Map<String, String> list
+
+       list.get(0) -> Map<String, String> (James Bond)
+       list.get(0).get("FIRST_NAME") -> James
+
+         */
+
+
+
 
     }
 }
