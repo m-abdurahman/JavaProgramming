@@ -19,5 +19,10 @@ public class AtTheGym {
         swimming.perform();
         System.out.println("Swimming 30 minutes - calories =  " + swimming.getCaloriesCount(30));
 
+        fw.start();
+        fw.perform();
+        System.out.println("Free-weight 30 minutes - calories = " + fw.getCaloriesCount(30));
+
+
     }
 }

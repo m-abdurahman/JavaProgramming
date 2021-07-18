@@ -1,6 +1,7 @@
 package day55_abstraction.flags;
 
 import java.awt.*;
+import javax.swing.*;
 
 public class FrenchFlag extends Flag{
 
